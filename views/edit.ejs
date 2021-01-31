@@ -1,0 +1,24 @@
+<main>
+    <div class="container">
+        <div class="search">
+            <div class="search-heading">
+                <h2>Add Books</h2>
+            </div>
+            <form action="/edit/<%= dataToUpdate._id %>" method="POST">
+                <label>Add New book</label>
+                <br />
+                <input type="text" placeholder="add books" class="input-field" name="book" value="<%= dataToUpdate.book %>">
+                <br />
+                <label>Auther</label>
+                <br />
+                <input type="text" placeholder="auther name" class="input-field" name="author" value="<%= dataToUpdate.author %>">
+                <br />
+                <label>Price</label>
+                <br />
+                <input type="text" placeholder="Rs .." class="input-field" name="price" value="<%= dataToUpdate.price %>">
+                <br />
+                <input type="submit" class="update-btn" value="Update">
+            </form>
+        </div>
+    </div>
+</main>
